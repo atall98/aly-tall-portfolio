@@ -13,36 +13,46 @@
 <body>
   <header class="header" id="accueil">
     <nav class="navbar container">
-      <a class="logo" href="#accueil">
-  <img src="photo.png" alt="Aly Tall">
-</a>
+      <a class="logo" href="#accueil"><img src="photo.png" alt="Aly Tall"></a>
+
       <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+
       <ul class="nav-links" id="navLinks">
-        <li><a class="active" href="#accueil">Accueil</a></li>
-        <li><a href="#apropos">À propos</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="active" href="#accueil" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#apropos" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#competences" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#projets" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Expérience</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
-      <a class="nav-cta" href="#contact">Me contacter</a>
+
+      <div class="nav-actions">
+        <a class="nav-cta" href="#contact" data-i18n="nav.cta">Me contacter</a>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">
+          <span class="lang-fr">FR</span>
+          <span class="lang-separator">/</span>
+          <span class="lang-en">EN</span>
+        </button>
+      </div>
     </nav>
 
     <div class="hero container">
       <div class="hero-content reveal">
-        <p class="eyebrow">DÉVELOPPEUR WEB • SI • CYBERSÉCURITÉ</p>
-        <h1>Je transforme les idées en <span>solutions digitales</span>.</h1>
-        <p class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">DÉVELOPPEUR WEB • SI • CYBERSÉCURITÉ</p>
+        <h1 data-i18n-html="hero.title">Je transforme les idées en <span>solutions digitales</span>.</h1>
+        <p class="hero-text" data-i18n-html="hero.text">
           Bonjour, je suis <strong>Aly Tall</strong>. Je conçois des applications web modernes,
           performantes et sécurisées, avec un intérêt particulier pour les systèmes d'information
           et la cybersécurité.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#projets">Voir mes projets</a>
-          <a class="btn secondary" href="#contact">Travaillons ensemble</a>
+          <a class="btn primary" href="#projets" data-i18n="hero.projects">Voir mes projets</a>
+          <a class="btn secondary" href="#contact" data-i18n="hero.work">Travaillons ensemble</a>
         </div>
+
         <div class="quick-info">
           <span>📍 Dakar, Sénégal</span>
           <span>💻 HTML • CSS • JS • PHP • Laravel</span>
@@ -56,8 +66,8 @@
   role: <i>"IT Developer"</i>,
   focus: [
     <i>"Web"</i>,
-    <i>"Systèmes"</i>,
-    <i>"Cybersécurité"</i>
+    <i>"Systems"</i>,
+    <i>"Cybersecurity"</i>
   ],
   mindset: <i>"Build & Secure"</i>
 };</code></pre>
@@ -70,20 +80,20 @@
     <section class="section" id="apropos">
       <div class="container two-col">
         <div class="section-heading reveal">
-          <p class="eyebrow">01 — À PROPOS</p>
-          <h2>Un profil à la croisée du développement et de la sécurité.</h2>
+          <p class="eyebrow" data-i18n="about.eyebrow">01 — À PROPOS</p>
+          <h2 data-i18n="about.title">Un profil à la croisée du développement et de la sécurité.</h2>
         </div>
         <div class="about-text reveal">
-          <p>
+          <p data-i18n-html="about.p1">
             Diplômé d'une Licence en Génie Logiciel et Sécurité des Technologies de l'Information,
             je développe mes compétences dans le développement web, les systèmes d'information
             et la cybersécurité.
           </p>
-          <p>
+          <p data-i18n-html="about.p2">
             Mon parcours comprend une expérience en développement web chez <strong>DEFAR SCI</strong>
             et une expérience au sein de la <strong>Direction des Systèmes d'Information d'Invictus Capital Finance (ICF)</strong>.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             Curieux, rigoureux et orienté solution, j'aime apprendre de nouvelles technologies
             et transformer des besoins concrets en solutions simples et efficaces.
           </p>
@@ -94,34 +104,37 @@
     <section class="section dark-section" id="competences">
       <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow">02 — COMPÉTENCES</p>
-          <h2>Mes compétences techniques</h2>
-          <p>Un socle polyvalent pour développer, administrer et sécuriser des solutions informatiques.</p>
+          <p class="eyebrow" data-i18n="skills.eyebrow">02 — COMPÉTENCES</p>
+          <h2 data-i18n="skills.title">Mes compétences techniques</h2>
+          <p data-i18n="skills.intro">Un socle polyvalent pour développer, administrer et sécuriser des solutions informatiques.</p>
         </div>
 
         <div class="skills-grid">
           <article class="skill-card reveal">
             <div class="icon">01</div>
-            <h3>Développement Web</h3>
-            <p>Création d'interfaces modernes et d'applications web fonctionnelles.</p>
+            <h3 data-i18n="skills.web.title">Développement Web</h3>
+            <p data-i18n="skills.web.text">Création d'interfaces modernes et d'applications web fonctionnelles.</p>
             <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>Laravel</span></div>
           </article>
+
           <article class="skill-card reveal">
             <div class="icon">02</div>
-            <h3>Bases de données</h3>
-            <p>Conception, manipulation et gestion des données applicatives.</p>
+            <h3 data-i18n="skills.db.title">Bases de données</h3>
+            <p data-i18n="skills.db.text">Conception, manipulation et gestion des données applicatives.</p>
             <div class="tags"><span>MySQL</span><span>SQL</span><span>CRUD</span><span>API REST</span></div>
           </article>
+
           <article class="skill-card reveal">
             <div class="icon">03</div>
-            <h3>Systèmes & Réseaux</h3>
-            <p>Compréhension des environnements systèmes et des infrastructures IT.</p>
+            <h3 data-i18n="skills.systems.title">Systèmes & Réseaux</h3>
+            <p data-i18n="skills.systems.text">Compréhension des environnements systèmes et des infrastructures IT.</p>
             <div class="tags"><span>Windows Server</span><span>Active Directory</span><span>DNS</span><span>TCP/IP</span></div>
           </article>
+
           <article class="skill-card reveal">
             <div class="icon">04</div>
-            <h3>Cybersécurité</h3>
-            <p>Bonnes pratiques de protection, authentification et contrôle d'accès.</p>
+            <h3 data-i18n="skills.cyber.title">Cybersécurité</h3>
+            <p data-i18n="skills.cyber.text">Bonnes pratiques de protection, authentification et contrôle d'accès.</p>
             <div class="tags"><span>Kerberos</span><span>NTLM</span><span>MFA</span><span>Chiffrement</span><span>Logs</span></div>
           </article>
         </div>
@@ -131,34 +144,34 @@
     <section class="section" id="projets">
       <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow">03 — PROJETS</p>
-          <h2>Quelques réalisations</h2>
-          <p>Des projets qui illustrent mon approche du développement et des technologies.</p>
+          <p class="eyebrow" data-i18n="projects.eyebrow">03 — PROJETS</p>
+          <h2 data-i18n="projects.title">Quelques réalisations</h2>
+          <p data-i18n="projects.intro">Des projets qui illustrent mon approche du développement et des technologies.</p>
         </div>
 
         <div class="projects-grid">
           <article class="project-card reveal">
             <div class="project-top"><span class="project-number">01</span><span class="project-type">WEB APP</span></div>
             <h3>StockControl</h3>
-            <p>Application de gestion de stock permettant de gérer produits, quantités et opérations.</p>
+            <p data-i18n="projects.stock.text">Application de gestion de stock permettant de gérer produits, quantités et opérations.</p>
             <div class="project-tech"><span>PHP</span><span>Laravel</span><span>MySQL</span></div>
-            <button class="project-link" data-project="stock">Voir le projet <span>→</span></button>
+            <button class="project-link" data-project="stock"><span data-i18n="projects.view">Voir le projet</span> <span>→</span></button>
           </article>
 
           <article class="project-card reveal">
             <div class="project-top"><span class="project-number">02</span><span class="project-type">PORTFOLIO</span></div>
-            <h3>Portfolio personnel</h3>
-            <p>Site vitrine responsive présentant mon parcours, mes compétences et mes projets.</p>
+            <h3 data-i18n="projects.portfolio.title">Portfolio personnel</h3>
+            <p data-i18n="projects.portfolio.text">Site vitrine responsive présentant mon parcours, mes compétences et mes projets.</p>
             <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <button class="project-link" data-project="portfolio">Voir le projet <span>→</span></button>
+            <button class="project-link" data-project="portfolio"><span data-i18n="projects.view">Voir le projet</span> <span>→</span></button>
           </article>
 
           <article class="project-card reveal">
             <div class="project-top"><span class="project-number">03</span><span class="project-type">SYSTEMS</span></div>
             <h3>Lab Windows Server</h3>
-            <p>Travaux pratiques autour des domaines, utilisateurs, groupes, Active Directory et DNS.</p>
+            <p data-i18n="projects.server.text">Travaux pratiques autour des domaines, utilisateurs, groupes, Active Directory et DNS.</p>
             <div class="project-tech"><span>Windows Server</span><span>AD</span><span>DNS</span></div>
-            <button class="project-link" data-project="server">Voir le projet <span>→</span></button>
+            <button class="project-link" data-project="server"><span data-i18n="projects.view">Voir le projet</span> <span>→</span></button>
           </article>
         </div>
       </div>
@@ -167,8 +180,8 @@
     <section class="section timeline-section" id="experience">
       <div class="container">
         <div class="section-heading centered reveal">
-          <p class="eyebrow">04 — EXPÉRIENCE</p>
-          <h2>Mon parcours professionnel</h2>
+          <p class="eyebrow" data-i18n="experience.eyebrow">04 — EXPÉRIENCE</p>
+          <h2 data-i18n="experience.title">Mon parcours professionnel</h2>
         </div>
 
         <div class="timeline">
@@ -176,27 +189,29 @@
             <div class="timeline-dot"></div>
             <div class="timeline-date">2026</div>
             <div class="timeline-content">
-              <h3>Stagiaire — Direction des Systèmes d'Information</h3>
+              <h3 data-i18n="experience.icf.title">Stagiaire — Direction des Systèmes d'Information</h3>
               <h4>Invictus Capital Finance (ICF)</h4>
-              <p>Participation aux activités de la DSI, découverte de l'administration des systèmes, des réseaux et des bonnes pratiques de sécurité informatique.</p>
+              <p data-i18n="experience.icf.text">Participation aux activités de la DSI, découverte de l'administration des systèmes, des réseaux et des bonnes pratiques de sécurité informatique.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">EXPÉRIENCE</div>
+            <div class="timeline-date" data-i18n="experience.exp">EXPÉRIENCE</div>
             <div class="timeline-content">
-              <h3>Stagiaire Développeur Web</h3>
+              <h3 data-i18n="experience.defar.title">Stagiaire Développeur Web</h3>
               <h4>DEFAR SCI</h4>
-              <p>Participation au développement de solutions web, conception d'interfaces et utilisation de HTML, CSS, JavaScript, PHP, Laravel et MySQL.</p>
+              <p data-i18n="experience.defar.text">Participation au développement de solutions web, conception d'interfaces et utilisation de HTML, CSS, JavaScript, PHP, Laravel et MySQL.</p>
             </div>
           </article>
+
           <article class="timeline-item reveal">
             <div class="timeline-dot"></div>
-            <div class="timeline-date">FORMATION</div>
+            <div class="timeline-date" data-i18n="experience.training">FORMATION</div>
             <div class="timeline-content">
               <h3>Licence GLSTI</h3>
-              <h4>Génie Logiciel et Sécurité des Technologies de l'Information</h4>
-              <p>Formation en informatique, développement logiciel et sécurité des technologies de l'information.</p>
+              <h4 data-i18n="experience.degree">Génie Logiciel et Sécurité des Technologies de l'Information</h4>
+              <p data-i18n="experience.degreeText">Formation en informatique, développement logiciel et sécurité des technologies de l'information.</p>
             </div>
           </article>
         </div>
@@ -206,9 +221,9 @@
     <section class="section contact-section" id="contact">
       <div class="container contact-wrap">
         <div class="section-heading reveal">
-          <p class="eyebrow">05 — CONTACT</p>
-          <h2>Un projet ? Parlons-en.</h2>
-          <p>Vous pouvez me contacter pour une opportunité, un projet ou une collaboration.</p>
+          <p class="eyebrow" data-i18n="contact.eyebrow">05 — CONTACT</p>
+          <h2 data-i18n="contact.title">Un projet ? Parlons-en.</h2>
+          <p data-i18n="contact.intro">Vous pouvez me contacter pour une opportunité, un projet ou une collaboration.</p>
           <div class="contact-links">
             <a href="mailto:tall20aly@gmail.com">✉ tall20aly@gmail.com</a>
             <a href="https://www.linkedin.com/in/aly-tall-820351357" target="_blank" rel="noopener">in LinkedIn</a>
@@ -216,16 +231,16 @@
         </div>
 
         <form class="contact-form reveal" id="contactForm">
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" placeholder="Votre nom" required>
+          <label for="name" data-i18n="contact.name">Nom</label>
+          <input id="name" name="name" type="text" placeholder="Votre nom" data-i18n-placeholder="contact.namePlaceholder" required>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="votre@email.com" required>
+          <label for="email" data-i18n="contact.email">Email</label>
+          <input id="email" name="email" type="email" placeholder="votre@email.com" data-i18n-placeholder="contact.emailPlaceholder" required>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Parlez-moi de votre projet..." required></textarea>
+          <label for="message" data-i18n="contact.message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Parlez-moi de votre projet..." data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
 
-          <button class="btn primary full" type="submit">Envoyer le message</button>
+          <button class="btn primary full" type="submit" data-i18n="contact.send">Envoyer le message</button>
           <p class="form-status" id="formStatus"></p>
         </form>
       </div>
@@ -234,16 +249,16 @@
 
   <footer>
     <div class="container footer-content">
-      <p>© <span id="year"></span> Aly Tall. Tous droits réservés.</p>
-      <a href="#accueil">Retour en haut ↑</a>
+      <p>© <span id="year"></span> Aly Tall. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <a href="#accueil" data-i18n="footer.top">Retour en haut ↑</a>
     </div>
   </footer>
 
   <div class="modal" id="projectModal" aria-hidden="true">
     <div class="modal-overlay" id="modalOverlay"></div>
     <div class="modal-box">
-      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
-      <p class="eyebrow">PROJET</p>
+      <button class="modal-close" id="modalClose" aria-label="Fermer" data-i18n-aria="modal.close">×</button>
+      <p class="eyebrow" data-i18n="modal.label">PROJET</p>
       <h3 id="modalTitle"></h3>
       <p id="modalText"></p>
       <div class="tags" id="modalTags"></div>
